@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Responsive Flexbox Image Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav aria-label="Primary">
+        <div class="nav-inner">
+        <div class="brand"><a href="#">SEANG Web</a>
+        </div>
+
+        <!-- Mobile toggle (checkbox hack) -->
+         <input id="nav-toggle" class="toggle" type="checkbox" aria-controls="primary-menu" aria-expanded="false"   />
+         <label for="nav-toggle" class="toggle-label" aria-label="Toggle navigation">&#9776 <span>Menu</span>
+         </label>
+
+         <ul id="primary-menu" class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Labs</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+         </div>
+    </nav>
+
+    <main>
+        <h1>Responsive Top Navigation</h1>
+        <p>Resize the browser to see the menu collapse into a mobile toggle at &le; 640px.</p>
+    </main>
+
+    <!-- Main Content Wrapper -->
+    <div class="warp">
+            <header role="banner">
+                <h1>Flexbox Responsive Layout</h1>
+                <p>This page demostrate a two-column layout that stacks on tablets/phones.</p>
+            </header>
+            <div class="main" role="main">
+                <article aria-label="Main content">
+                    <h2>Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        This column grows to occupy available space on larger screens.</p>
+                    <p>Try adding more paragraphs and observe how the layout adapts to use <code>flex-basis</code>, <code>flex-grow</code>, and <code>gap</code> to control proportions and spacing</p>
+                </article>
+
+                <aside aria-label="Sidebar" class="aside">
+                    <h2>Sidebar</h2>
+                    <ul>
+                        <li><a href="https://yra84229-sys123.github.io/ITE-year2-PP/#" target="_blank">yra84229-sys123.github.io/ITE-year2-PP</a></li>
+                        <li><a href="https://codewithsadee.github.io/tourly/#" target="_blank">codewithsadee.github.io/tourly</a></li>
+                        <li><a href="https://codewithsadee.github.io/tourest/#" target="_blank">codewithsadee.github.io/tourest</a></li>
+                    </ul>
+                </aside>
+                
+            </div>
+
+            <footer role="contentinfo">
+                <p>&copy; 2026 Web & Cloud Technology Course - Royal University of Phnom Penh.</p>
+                <p>Created with HTML and CSS by SEANG Sompo (Advisor: Dr. CHHIM Bunchhun).</p>
+            </footer>
+
+        </div>
+
+        <!-- Image Gallery -->
+        <header>
+            <h1>Responsive Flexbox Image Gallery</h1>
+            <p>Resizes the browser layout across desktop/tablet/mobile.</p>
+        </header>
+
+        <main>
+            <section class="gallery" arial-label="Image Gallery">
+
+                <figure class="item">
+                    <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
+                        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italian Riviera Cinque Terre" />
+                        <figcaption class="caption">Italian Riviera Cinque Terre</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="item">
+                    <a target="_blank" href="https://www.w3schools.com/css/img_forest.jpg">
+                        <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Green Forest New Zealand" />
+                        <figcaption class="caption">Green Forest New Zealand</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="item">
+                    <a target="_blank" href="https://www.w3schools.com/css/img_lights.jpg">
+                        <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights or Aurora Borealis" />
+                        <figcaption class="caption">Northern Lights or Aurora Borealis</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="item">
+                    <a target="_blank" href="https://www.w3schools.com/css/img_mountains.jpg">
+                        <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Peyto Lake, Banff National Park, Canada." />
+                        <figcaption class="caption">Peyto Lake, Banff National Park, Canada.</figcaption>
+                    </a>
+                </figure>
+
+            </section>
+
+            <section class="note">
+                <div class="note" role="note">
+                <article aria-label="Note">
+                <p>Here we use media queries to re-arrange the images on different screen sizes:</p>
+                <ul>
+                <li>If screen is larger than 768px wide - show four images side by side</li>
+                <li>If screen is smaller than 768px - show two images side by side</li>
+                <li>If screens is smaller than 480px - stack the images vertically (100%)</li>
+                </ul>
+                <p><strong>Tip:</strong> You will learn more about media queries later in our CSS Tutorial.
+                </p>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive" target="_blank">Open this link to learn more in W3schools.com</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="footer">
+                <footer role="contentinfo">
+                <p>&copy; 2026 Web & Cloud Technology Course - Royal University of Phnom Penh.</p>
+                <p>Created with HTML and CSS by SEANG Sompo (Advisor: Dr. CHHIM Bunchhun).</p>
+            </footer>
+            </section>
+            
+        </main>
+        
+    
+</body>
+
+</html>
